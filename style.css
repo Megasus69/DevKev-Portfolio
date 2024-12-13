@@ -223,6 +223,8 @@ section {
 }
 
 .btn {
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
@@ -259,7 +261,7 @@ section {
 }
 
 .btn-container {
-    gap: 1rem;
+    gap: 2.5rem;
 }
 
 /* ABOUT SECTION */
@@ -404,6 +406,12 @@ article .icon {
 }
 
 .project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+.project-btnn {
+    margin-top: 4.5rem;
     color: black;
     border-color: rgb(163, 163, 163);
 }
@@ -556,4 +564,90 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+
+
+/* Animations */
+
+.animate__up {
+    animation: animateUp 1s ease-in-out forwards;
+}
+
+.animate__fadeIn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.animate__slide-left {
+    animation: slideLeft 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.animate__slide-right {
+    animation: slideRight 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.animate__slide-down {
+    animation: slideDown 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes animateUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
