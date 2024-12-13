@@ -125,6 +125,7 @@ input:checked+.slider:before {
 .hamburger-menu {
     position: relative;
     display: inline-block;
+    z-index: 1;
 }
 
 .hamburger-icon {
@@ -134,6 +135,10 @@ input:checked+.slider:before {
     height: 24px;
     width: 30px;
     cursor: pointer;
+}
+
+.hamburger-menu .switch {
+    margin-left: 30%;
 }
 
 .hamburger-icon span {
@@ -616,7 +621,7 @@ footer p {
     text-align: center;
 }
 
-
+/* dark mode */
 .dark-mode {
     background-color: #222;
 }
@@ -687,7 +692,7 @@ footer p {
 
 @keyframes slideLeft {
     from {
-        transform: translateX(-10%);
+        transform: translateX(-30%);
         opacity: 0;
     }
 
@@ -699,7 +704,7 @@ footer p {
 
 @keyframes slideRight {
     from {
-        transform: translateX(10%);
+        transform: translateX(30%);
         opacity: 0;
     }
 
@@ -711,7 +716,7 @@ footer p {
 
 @keyframes slideDown {
     from {
-        transform: translateY(10%);
+        transform: translateY(30%);
         opacity: 0;
     }
 

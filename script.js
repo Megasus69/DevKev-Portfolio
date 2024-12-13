@@ -6,11 +6,15 @@ function toggleMenu() {
 }
 
 
-const switchButton = document.querySelector('.switch input');
+const switchButton = document.querySelectorAll('.switch input'); // Use querySelectorAll to target all switches
 
-switchButton.addEventListener('change', () => {
-    document.body.classList.toggle('dark-mode');
+// Add event listeners to each switch input (for mobile and desktop)
+switchButton.forEach(button => {
+    button.addEventListener('change', () => {
+        document.body.classList.toggle('dark-mode');
+    });
 });
+
 
 
 // Select all sections
