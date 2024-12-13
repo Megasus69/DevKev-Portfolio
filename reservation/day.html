@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-Reservation | Salazar Cottages</title>
+    <link rel="stylesheet" href="day.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=M+PLUS+1p&family=Martel+Sans:wght@200&family=Nunito+Sans:opsz,wght@6..12,200&family=Open+Sans:wght@300&family=Poppins:wght@100;400&family=Roboto+Slab&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="banner">
+
+        <div class="content">
+            <div class="main-container">
+                <p class="main">Day Stay</p>
+                <div class="vertical-line"></div>
+                <p class="main2">Reservation</p>
+            </div>
+            <h1 class="heading-main">Salazar Reservation Form</h1>
+        </div>
+
+    </section>
+
+    <section id="banner2">
+
+        <div class="container">
+            <div class="tittle">
+                <h1>Day Stay</h1>
+                <h2>TIME: 9am to 4pm</h2>
+                <p>Please complete the form below.</p>
+            </div>
+
+            <form action="#" method="POST">
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <span class="details">First Name:</span>
+                        <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Last Name:</span>
+                        <input type="text" name="lastname" id="lastname" placeholder="Enter your Last name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Email:</span>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Phone Number:</span>
+                        <input type="tel" name="phonenumber" id="phonenumber" placeholder="Enter your Phone number" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Check in:</span>
+                        <input type="date" name="checkin" id="checkin" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Check out</span>
+                        <input type="date" name="checkout" id="checkout" required>
+                    </div>
+
+                    <label for="guest" name="guest" >Guest/s:</label>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+
+                    <div class="btnn">
+                        <button type="submit" name="btnn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="btn">
+            <a href="../index.html">
+                <button>
+                    <span><i class="fa-solid fa-arrow-left"></i> Return to Homepage</span>
+                </button>
+            </a>
+        </div>
+
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var dtToday = new Date();
+         
+            var month = dtToday.getMonth() + 1;
+            var day = dtToday.getDate();
+            var year = dtToday.getFullYear();
+            if(month < 10)
+                month = '0' + month.toString();
+            if(day < 10)
+             day = '0' + day.toString();
+            var maxDate = year + '-' + month + '-' + day;
+            $('#checkin').attr('min', maxDate);
+        });
+
+        $(function(){
+            var dtToday = new Date();
+         
+            var month = dtToday.getMonth() + 1;
+            var day = dtToday.getDate();
+            var year = dtToday.getFullYear();
+            if(month < 10)
+                month = '0' + month.toString();
+            if(day < 10)
+             day = '0' + day.toString();
+            var maxDate = year + '-' + month + '-' + day;
+            $('#checkout').attr('min', maxDate);
+        });
+
+        </script>
+    
+
+</body>
+</html>

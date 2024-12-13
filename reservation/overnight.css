@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#banner{
+    width: 100%;
+    height: 45vh;
+    background-image: linear-gradient(to bottom,rgba(93, 123, 158, 0), rgb(93, 123, 158, 1)), url(nightpic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    text-align: center;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: reveal cubic-bezier(0.77, 0, 0.175, 1) 0.4s forwards;
+}
+
+.main-container .main{
+    margin-top: 16%;
+    text-decoration: none;
+    color: #183153;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.vertical-line{
+    width: 2px;
+    height: 25px;
+    background-color: #2a2d2c;
+    margin: 0 10px;
+    margin-top: 15.9%;
+    animation: reveal cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
+}
+
+.main2{
+    margin-top: 16%;
+    color: #da8c26;
+    display: inline-block; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    animation: reveal cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
+}
+
+.heading-main{
+    color: #183153;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    animation: reveal cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
+}
+
+.heading-main::after{
+    content: "";
+    position: absolute;
+    top: 140%;
+    left: 17%;
+    width: 66%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    background-color: #a3a3a3;
+}
+
+@keyframes reveal{
+    0% {
+      transform: translate(0,30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0,0);
+      opacity: 1;
+    }
+}
+
+
+#banner2{
+    width: 100%;
+    height: 150vh;
+    background: #5D7B9E;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#banner2 .container{
+    margin-top: 10%;
+    margin-left: 25%;
+    max-width: 700px;
+    width: 100%;
+    background: #f1f1f1;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+#banner2 .container .tittle{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#banner2 .tittle h1{
+    margin: 5px;
+    font-size: 70px;
+    font-family: 'Open Sans', sans-serif;
+    color: #183153;
+    letter-spacing: 1px;
+}
+
+#banner2 .tittle h2{
+    margin: 15px;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#banner2 .tittle p{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5%;
+}
+
+#banner2 .container .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+#banner2 form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+#banner2 .user-details .input-box .details{
+    display: block;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+}
+
+#banner2 .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #bbbbbb;
+    padding-left: 15px;
+    font-size: 16;
+    border-bottom-width: 3px;
+    transition: all 0.3s ease;
+}
+
+#banner2 .user-details label{
+    margin: 20px 0 12px 0;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 0;
+}
+
+#banner2 .user-details select{
+    margin: 20px 0 12px 0;
+    margin-top: 25px;
+    margin-right: 525px;
+    border: 2px solid #bbbbbb;
+    border-bottom-width: 3px;
+    cursor: pointer;
+}
+
+#banner2 .user-details .input-box input:focus,
+#banner2 .user-details .input-box input:valid{
+    border-color: #183153;
+}
+
+#banner2 form .btnn{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#banner2 button{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: #da8c26;
+    color: white;
+    border-radius: 4px;
+}
+
+#banner2 button:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(255, 175, 27) 0%, rgb(255, 145, 0) 100%);
+}
+
+#banner2 button:active {
+    transform: translate(0em, 0.2em);
+}
+
+#banner2 .btn{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 29%;
+    margin-top: 1%;
+}
+
+#banner2 .btn button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    background: #a3a3a3;
+    transition: all 0.2s ease-in;
+}
+   
+#banner2 .btn button i{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.2s ease-in;
+}
+   
+#banner2 .btn button:hover i{
+    font-size: 20px;
+    transform: translateX(-7px);
+}
+   
+#banner2 .btn button:hover{
+    transform: translateY(-3px);
+}
+
+#banner2 .btn button:active{
+    transform: scale(0.98);
+}
+
+
+
+@media (max-width: 768px){
+    @media (max-width: 768px){
+        #banner{
+            height: auto;
+            min-height: 300px;
+        }
+    
+        .main-container .main,
+        .vertical-line,
+        .main2{
+            margin-top: 40%;
+        }
+    
+        .heading-main{
+            font-size: 36px;
+        }
+    
+        .heading-main::after{
+            display: none;
+        }
+    
+        #banner2{
+            height: auto;
+            padding: 20px;
+        }
+    
+        #banner2 .container{
+            margin: 5% auto;
+            margin-left: 0;
+        }
+    
+        #banner2 .container .user-details .input-box{
+            width: 100%;
+            margin-bottom: 10px; 
+        }
+    
+        #banner2 .user-details select{
+            margin-right: 65%;
+        }
+    
+        #banner2 .btn{
+            margin: 5% auto;
+            margin-right: 0;
+            margin-top: 2%;
+        }
+    
+        #banner2 .btn button{
+            padding: 8px 16px;
+            font-size: 14px; 
+        }
+    
+        #banner2 .btn button i{
+            font-size: 16px;
+        }
+    }
+}
