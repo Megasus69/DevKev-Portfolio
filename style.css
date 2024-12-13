@@ -316,7 +316,7 @@ section {
 }
 
 .btn-container {
-    gap: 2.5rem;
+    gap: 1rem;
 }
 
 /* ABOUT SECTION */
@@ -621,12 +621,17 @@ footer p {
     text-align: center;
 }
 
+
 /* dark mode */
 .dark-mode {
     background-color: #222;
 }
 
 .dark-mode .logo {
+    color: #fff;
+}
+
+.dark-mode .bttn {
     color: #fff;
 }
 
@@ -641,6 +646,19 @@ footer p {
     color: #fff;
 }
 
+.dark-mode .btn-color-1,
+.dark-mode .btn-color-2 {
+    border: rgb(85, 85, 85) 0.1rem solid;
+}
+
+
+.dark-mode .container form{
+    background-color: #fff;
+}
+
+.dark-mode footer p {
+    color: #929292;
+}
 
 /* Animations */
 
